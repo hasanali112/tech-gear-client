@@ -7,10 +7,12 @@ const MostPopular = () => {
   return (
     <div className="bg-[#e5e7eb] pt-14 pb-12">
       <Container>
-        <div className="flex justify-between items-center">
+        <div className="flex lg:flex-row flex-col gap-4 lg:justify-between items-center">
           <div>
-            <h1 className="text-4xl font-bold">Most Popular Products</h1>
-            <p className="w-[70%] pt-3">
+            <h1 className="text-4xl  font-bold text-center">
+              Most Popular Products
+            </h1>
+            <p className="lg:w-[70%] w-full pt-3">
               Each product in our best-sellers list has been chosen by customers
               like you for its performance, style, and reliability.
             </p>
