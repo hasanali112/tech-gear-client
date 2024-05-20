@@ -4,9 +4,10 @@ import { getFlashSaleData } from "@/utils/getFlashSale";
 import { Tproduct } from "@/type/type";
 import FlashSaleCard from "./FlashSaleCard";
 import Link from "next/link";
+import { getFlashSale } from "@/utils/getFlashHome";
 
 const FlashSaleHome = async () => {
-  const getSaleDataHome = await getFlashSaleData();
+  const getSaleDataHome = await getFlashSale();
   return (
     <div className="bg-[#e5e7eb] pt-14 pb-12">
       <Container>

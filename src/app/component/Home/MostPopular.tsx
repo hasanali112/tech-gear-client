@@ -1,6 +1,7 @@
 import { Button } from "@nextui-org/react";
 import Container from "../shared/Container/Container";
 import MostPopularCard from "./MostPopularCard";
+import Link from "next/link";
 
 const MostPopular = () => {
   return (
@@ -15,25 +16,28 @@ const MostPopular = () => {
             </p>
           </div>
           <div>
-            <Button className="inline-flex items-center gap-4 text-base text-white bg-black">
-              View All{" "}
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-chevron-right"
-                >
-                  <path d="m9 18 6-6-6-6" />
-                </svg>
-              </span>
-            </Button>
+            <Link href="/products">
+              {" "}
+              <Button className="inline-flex items-center gap-4 text-base text-white bg-black">
+                View All{" "}
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-chevron-right"
+                  >
+                    <path d="m9 18 6-6-6-6" />
+                  </svg>
+                </span>
+              </Button>
+            </Link>
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 pt-6">

@@ -10,7 +10,7 @@ const MostPopularCard = () => {
             "
           height={360}
           width={296}
-          className="rounded-lg h-[350px] object-cover "
+          className="rounded-lg w-full h-[350px] object-cover "
         />
       </div>
       <div className="ml-2">

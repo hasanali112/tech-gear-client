@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../shared/Container/Container";
 import TopCategoryCard from "./TopCategoryCard";
 import { Button } from "@nextui-org/react";
+import Link from "next/link";
 
 const TopCategories = () => {
   return (
@@ -32,7 +33,10 @@ const TopCategories = () => {
           </div>
         </div>
         <div className=" text-center py-10">
-          <Button className="bg-black text-white">View All</Button>
+          <Link href="/categories">
+            {" "}
+            <Button className="bg-black text-white">View All</Button>
+          </Link>
         </div>
       </Container>
     </div>
