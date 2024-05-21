@@ -1,11 +1,11 @@
 "use client";
-import { Tproduct } from "@/type/type";
+import { TProduct } from "@/type/type";
 import FlashSaleCard from "./FlashSaleCard";
 import { useState } from "react";
 import { Button } from "@nextui-org/react";
 
 type TFlas = {
-  getSaleData: Tproduct[];
+  getSaleData: TProduct[];
 };
 
 const FlashSaleCompo = ({ getSaleData }: TFlas) => {
@@ -13,7 +13,7 @@ const FlashSaleCompo = ({ getSaleData }: TFlas) => {
   return (
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 pb-10">
-        {getSaleData.slice(0, show ? 24 : 12)?.map((flashItem: Tproduct) => (
+        {getSaleData.slice(0, show ? 24 : 12)?.map((flashItem: TProduct) => (
           <FlashSaleCard key={flashItem._id} flashItem={flashItem} />
         ))}
       </div>

@@ -5,16 +5,12 @@ import Link from "next/link";
 const CategoryCard = ({ categoryItem }: { categoryItem: TCategory }) => {
   return (
     <div>
-      <Card>
-        <CardHeader className="flex gap-3">
-          <Link
-            href={`/${categoryItem.title.toLowerCase().replace(/\s+/g, "-")}`}
-          >
-            <p className="text-xl">{categoryItem.title}</p>
-          </Link>
-        </CardHeader>
-        <Divider />
-        <Link href="/products">
+      <Link href={`/${categoryItem.title.toLowerCase()}`}>
+        <Card>
+          <CardHeader className="flex gap-3">
+            <p className="text-xl">{categoryItem.brand}</p>
+          </CardHeader>
+          <Divider />
           <CardBody>
             <Image
               alt="category logo"
@@ -25,8 +21,8 @@ const CategoryCard = ({ categoryItem }: { categoryItem: TCategory }) => {
               className="w-full h-[200px]"
             />
           </CardBody>
-        </Link>
-      </Card>
+        </Card>
+      </Link>
     </div>
   );
 };

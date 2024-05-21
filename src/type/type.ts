@@ -1,14 +1,3 @@
-export type Tproduct = {
-  _id: string;
-  id: number;
-  Title: string;
-  Price: number;
-  Ratings: number;
-  Brand: string;
-  Category: string;
-  Description: string;
-  image: string;
-};
 export type TProduct = {
   _id: string;
   id: number;
@@ -18,10 +7,14 @@ export type TProduct = {
   brand: string;
   category: string;
   description: string;
-  image: string;
+  image: string[];
+  flashSale: boolean;
 };
 export type TCategory = {
   _id: string;
   title: string;
   image: string;
+  brand: string;
+  priceRange: string;
+  rating: number;
 };

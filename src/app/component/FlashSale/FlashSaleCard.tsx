@@ -1,7 +1,7 @@
-import { Tproduct } from "@/type/type";
+import { TProduct } from "@/type/type";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 
-const FlashSaleCard = ({ flashItem }: { flashItem: Tproduct }) => {
+const FlashSaleCard = ({ flashItem }: { flashItem: TProduct }) => {
   return (
     <Card className="py-4 h-[432px] w-full lg:w-[286px] hover:-translate-y-1 duration-500 mt-10">
       <CardBody className="overflow-visible py-1">
@@ -12,9 +12,9 @@ const FlashSaleCard = ({ flashItem }: { flashItem: Tproduct }) => {
         />
       </CardBody>
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        <p className="text-tiny uppercase font-bold">{flashItem.Title}</p>
-        <small className="text-default-500">${flashItem.Price}</small>
-        <h4 className="font-bold text-large">{flashItem.Brand}</h4>
+        <p className="text-tiny uppercase font-bold">{flashItem.title}</p>
+        <small className="text-default-500">${flashItem.price}</small>
+        <h4 className="font-bold text-large">{flashItem.brand}</h4>
       </CardHeader>
     </Card>
   );

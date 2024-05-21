@@ -31,16 +31,48 @@ const CarousalCard = () => {
         ref={boxContainer}
         className="flex bg-white gap-5 lg:gap-6 overflow-hidden w-[308px] lg:w-[930px] mx-auto p-3 lg:mt-0 mt-16"
       >
-        <HeroCard />
-        <HeroCard />
-        <HeroCard />
-        <HeroCard />
-        <HeroCard />
-        <HeroCard />
-        <HeroCard />
-        <HeroCard />
-        <HeroCard />
-        <HeroCard />
+        <HeroCard
+          image="https://images.unsplash.com/photo-1565263965454-a44e2ede252a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          title="iPhone 14 Pro Max"
+          price={400}
+          brand="Apple"
+        />
+        <HeroCard
+          image="https://images.unsplash.com/photo-1529653762956-b0a27278529c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          title="iPhone 14"
+          price={900}
+          brand="Apple"
+        />
+        <HeroCard
+          image="https://images.unsplash.com/photo-1567581935884-3349723552ca?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          title="iPhone 13 Mini"
+          price={670}
+          brand="Apple"
+        />
+        <HeroCard
+          image="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          title="Samsung 14 Pro Max"
+          price={1000}
+          brand="Samsung"
+        />
+        <HeroCard
+          image="https://images.unsplash.com/photo-1583573636255-6a41ff5523d4?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          title="Samsung Galaxy S23 Ultra"
+          price={700}
+          brand="Samsung"
+        />
+        <HeroCard
+          image="https://images.unsplash.com/photo-1583574333311-3a86605c76b2?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          title="Samsung Galaxy A14 5G"
+          price={450}
+          brand="Samsung"
+        />
+        <HeroCard
+          image="https://images.unsplash.com/photo-1565263965454-a44e2ede252a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          title="iPhone 14 Pro Max"
+          price={400}
+          brand="Apple"
+        />
       </div>
       <div className="flex gap-6 justify-between z-10 items-center w-full lg:w-[1040px] mx-auto -translate-y-[550%]">
         <button
