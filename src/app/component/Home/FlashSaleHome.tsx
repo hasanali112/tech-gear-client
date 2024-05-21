@@ -1,7 +1,7 @@
 import { Button } from "@nextui-org/react";
 import Container from "../shared/Container/Container";
 import { getFlashSaleData } from "@/utils/getFlashSale";
-import { Tproduct } from "@/type/type";
+import { TProduct } from "@/type/type";
 import FlashSaleCard from "./FlashSaleCard";
 import Link from "next/link";
 import { getFlashSale } from "@/utils/getFlashHome";
@@ -40,7 +40,7 @@ const FlashSaleHome = async () => {
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-5  gap-10 pt-6">
-          {getSaleDataHome.slice(0, 4)?.map((saleItem: Tproduct) => (
+          {getSaleDataHome.slice(0, 4)?.map((saleItem: TProduct) => (
             <FlashSaleCard key={saleItem._id} saleItem={saleItem} />
           ))}
         </div>

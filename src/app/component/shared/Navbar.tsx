@@ -19,7 +19,7 @@ const Navbar = () => {
             <Link href="/categories">
               <li>Categories</li>
             </Link>
-            <Link href="/products">
+            <Link href="/mobile?brand=all-product">
               <li>Products</li>
             </Link>
             <Link href="/flash-sale">

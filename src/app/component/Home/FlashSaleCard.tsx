@@ -7,7 +7,7 @@ const FlashSaleCard = ({ saleItem }: { saleItem: TProduct }) => {
     <div className="hover:-translate-y-2 duration-500 rounded-lg">
       <div>
         <Image
-          src={saleItem.image}
+          src={saleItem.image[0]}
           alt="card image
               "
           height={360}

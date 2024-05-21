@@ -16,20 +16,36 @@ const TopCategories = () => {
         </p>
         <div className="grid grid-cols-12 gap-4">
           <div className="w-full h-[413px]  lg:col-span-4 col-span-12 rounded-lg">
-            <TopCategoryCard className="h-[413px]" />
+            <TopCategoryCard
+              className="h-[413px]"
+              image="https://images.unsplash.com/photo-1621768216002-5ac171876625?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              title="Apple"
+            />
           </div>
           <div className="w-full h-[413px] col-span-12 lg:col-span-4 rounded-lg">
             <div className="grid grid-cols-12 gap-4">
               <div className="w-full h-[200px]  col-span-12 rounded-lg">
-                <TopCategoryCard className="h-[200px]" />
+                <TopCategoryCard
+                  className="h-[200px]"
+                  image="https://images.unsplash.com/photo-1661347998423-b15d37d6f61e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  title="Samsung"
+                />
               </div>
               <div className="w-full h-[200px]  col-span-12 rounded-lg">
-                <TopCategoryCard className="h-[200px]" />
+                <TopCategoryCard
+                  className="h-[200px]"
+                  image="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  title="Google"
+                />
               </div>
             </div>
           </div>
           <div className="w-full h-[413px]  lg:col-span-4 col-span-12 rounded-lg">
-            <TopCategoryCard className="h-[413px]" />
+            <TopCategoryCard
+              className="h-[413px]"
+              image="https://www.freepnglogos.com/uploads/xiaomi-png/xiaomi-svg-png-icon-download-12.png"
+              title="Xiaomi"
+            />
           </div>
         </div>
         <div className=" text-center py-10">

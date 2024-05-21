@@ -15,6 +15,7 @@ export type TCategory = {
   title: string;
   image: string;
   brand: string;
-  priceRange: string;
+  minPrice: number;
+  maxPrice: number;
   rating: number;
 };

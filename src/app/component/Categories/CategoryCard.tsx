@@ -5,7 +5,9 @@ import Link from "next/link";
 const CategoryCard = ({ categoryItem }: { categoryItem: TCategory }) => {
   return (
     <div>
-      <Link href={`/${categoryItem.title.toLowerCase()}`}>
+      <Link
+        href={`/${categoryItem.title.toLowerCase()}?brand=${categoryItem.brand.toLowerCase()}`}
+      >
         <Card>
           <CardHeader className="flex gap-3">
             <p className="text-xl">{categoryItem.brand}</p>

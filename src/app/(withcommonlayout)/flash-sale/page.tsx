@@ -2,7 +2,7 @@ import Countdown from "@/app/component/FlashSale/Countdown";
 import FlashSaleCard from "@/app/component/FlashSale/FlashSaleCard";
 import FlashSaleCompo from "@/app/component/FlashSale/FlashSaleCompo";
 import Container from "@/app/component/shared/Container/Container";
-import { Tproduct } from "@/type/type";
+
 import { getFlashSaleData } from "@/utils/getFlashSale";
 
 const FlashSale = async () => {
