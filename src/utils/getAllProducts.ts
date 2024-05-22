@@ -1,5 +1,5 @@
 export const getAllProductDataFromDb = async () => {
-  const res = await fetch("http://localhost:5000/allproducts", {
+  const res = await fetch("https://gadget-server-beta.vercel.app/allproducts", {
     next: {
       revalidate: 30,
     },

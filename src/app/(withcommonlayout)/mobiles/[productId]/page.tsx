@@ -1,4 +1,5 @@
 import Container from "@/app/component/shared/Container/Container";
+import { TProduct } from "@/type/type";
 import { getSingleProductFromDB } from "@/utils/getSingleProduct";
 import { Button, Divider } from "@nextui-org/react";
 import Image from "next/image";
@@ -9,9 +10,16 @@ interface TProps {
   };
 }
 
+export const generateStaticParams = async () => {
+  const res = await fetch("https://gadget-server-beta.vercel.app/all-products");
+  const products = await res.json();
+  return products.slice(0, 10)?.map((product: TProduct) => ({
+    productId: product._id,
+  }));
+};
+
 const SingleProductDetails = async ({ params }: TProps) => {
   const getSingleProduct = await getSingleProductFromDB(params.productId);
-  console.log(getSingleProduct);
 
   return (
     <div className="bg-[#e5e7eb] ">

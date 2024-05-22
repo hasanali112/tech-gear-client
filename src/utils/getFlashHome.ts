@@ -1,5 +1,5 @@
 export const getFlashSale = async () => {
-  const res = await fetch("http://localhost:5000/flash-sale", {
+  const res = await fetch("https://gadget-server-beta.vercel.app/flash-sale", {
     next: {
       revalidate: 30,
     },

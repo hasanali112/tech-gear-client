@@ -12,7 +12,7 @@ const MostPopular = async () => {
       <Container>
         <div className="flex lg:flex-row flex-col gap-4 lg:justify-between items-center">
           <div>
-            <h1 className="text-4xl  font-bold text-center">
+            <h1 className="text-4xl  font-bold lg:text-left text-center">
               Most Popular Products
             </h1>
             <p className="lg:w-[70%] w-full pt-3">

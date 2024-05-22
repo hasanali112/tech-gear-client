@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SvgCompo from "../Svg/SvgCompo";
 import Container from "./Container/Container";
 
@@ -11,9 +12,15 @@ const Footer = () => {
               COMPANY
             </h1>
             <ul className="flex lg:flex-col flex-row justify-center lg:justify-start gap-5 lg:gap-0 lg:space-y-3 mt-2">
-              <li>About</li>
-              <li>Pricing</li>
-              <li>Blog</li>
+              <Link href="/about">
+                <li>About</li>
+              </Link>
+              <Link href="/flash-sale">
+                <li>Trending Products</li>
+              </Link>
+              <Link href="/categories">
+                <li>Brands</li>
+              </Link>
               <li>Privacy Policy</li>
               <li>Terms of Use</li>
             </ul>
@@ -25,7 +32,10 @@ const Footer = () => {
             <ul className="flex lg:flex-col flex-row justify-center lg:justify-start gap-5 lg:gap-0 lg:space-y-3 mt-2">
               <li>Faq</li>
               <li>Support Center</li>
-              <li>Payment Security</li>
+              <li>Customer Care</li>
+              <Link href="/contact">
+                <li>Contact Us</li>
+              </Link>
             </ul>
           </div>
           <div className="lg:col-span-3 col-span-12 hidden lg:block">
