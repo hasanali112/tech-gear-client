@@ -178,7 +178,7 @@ const SingleProductDetails = async ({ params }: TProps) => {
               </div>
             </div>
             <div>
-              <div className=" w-full h-[532px] pt-4">
+              <div className=" w-full h-[650px] mt-10">
                 <h1 className="text-3xl">{getSingleProduct.title}</h1>
                 <div className="flex  items-center gap-3">
                   <p className="text-xl mt-3">${getSingleProduct.price}</p>
