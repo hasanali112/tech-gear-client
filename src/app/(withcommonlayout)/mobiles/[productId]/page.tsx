@@ -118,7 +118,7 @@ const SingleProductDetails = async ({ params }: TProps) => {
                   Delivers in: 3-7 Working Days
                 </p>
               </div>
-              <Button className="w-full mt-4 bg-black text-white">
+              <Button variant="bordered" className="w-full mt-4  ">
                 Add To Cart
               </Button>
               <Button className="w-full mt-3 bg-black text-white">

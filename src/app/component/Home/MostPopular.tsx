@@ -2,8 +2,11 @@ import { Button } from "@nextui-org/react";
 import Container from "../shared/Container/Container";
 import MostPopularCard from "./MostPopularCard";
 import Link from "next/link";
+import { getAllProductDataFromDb } from "@/utils/getAllProducts";
+import { TProduct } from "@/type/type";
 
-const MostPopular = () => {
+const MostPopular = async () => {
+  const getProductByCategory = await getAllProductDataFromDb();
   return (
     <div className="bg-[#e5e7eb] pt-14 pb-12">
       <Container>
@@ -18,7 +21,7 @@ const MostPopular = () => {
             </p>
           </div>
           <div>
-            <Link href="/products">
+            <Link href="/mobile?brand=all-product">
               {" "}
               <Button className="inline-flex items-center gap-4 text-base text-white bg-black">
                 View All{" "}
@@ -43,14 +46,9 @@ const MostPopular = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 pt-6">
-          <MostPopularCard />
-          <MostPopularCard />
-          <MostPopularCard />
-          <MostPopularCard />
-          <MostPopularCard />
-          <MostPopularCard />
-          <MostPopularCard />
-          <MostPopularCard />
+          {getProductByCategory.slice(0, 8)?.map((productItem: TProduct) => (
+            <MostPopularCard key={productItem._id} productItem={productItem} />
+          ))}
         </div>
       </Container>
     </div>
